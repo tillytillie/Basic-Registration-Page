@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <p>This is my JS learning Journey</p>
+    <p id="learning">Welcome to TillyStack</p>
+    <div class="container">
+      <fieldset>
+        <legend>
+          <p class="legend">Basic Information</p>
+        </legend>
+        
+        <form id="form" name="myForm" action="aaa.php" onsubmit="return validateForm()" method="post">
+          <input type="text" name="fname"  id="fname" maxlength="" placeholder="First Name:"/>         
+          <span id="fnameerror"></span>
+          <br />
+        
+          <input type="text" name="lname" placeholder="Last Name:" />
+          <span id="lnameerror"></span>
+          <br />
+        
+        
+          <input type="number" name="phone"  max="" placeholder="Phone"/>
+          <span id="ageerror"></span>
+          <br>
+
+        
+          <input type="password" name="password1" placeholder="Password">
+          <span id="pass1error"></span>   
+          <br>
+       
+          <input type="password" name="password2" placeholder="Confirm password">
+          <span id="pass2error"></span>
+          <br>
+
+          <input type="submit" value="Submit" name="submit" onclick="submitForm()">
+         </form>
+         <p>Already have account?</p>
+         <a href="#" >Login</a>
+    <br><br>
+        </fieldset>
+
+      </div>
+
+    <div class="container">
+      <p id="firstname"></p>
+      <p id="lastname"></p>
+      <p id="age"></p>
+    </div>
+    <p id="date"></p>
+    <script src="js/script.js"></script>
+  </body>
+</html>

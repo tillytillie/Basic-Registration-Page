@@ -1,0 +1,99 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /*border: 2px solid red;*/
+}
+
+html body {
+  background-color: rgb(216, 226, 216);
+}
+p {
+  text-align: center;
+}
+a {
+  color: teal;
+  text-decoration: none;
+}
+.container {
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+legend {
+  box-shadow: inset 1px 1px 10px 10px teal;
+}
+.legend {
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+  font-style: italic;
+  padding: 10px;
+}
+
+fieldset {
+  border: 2px dashed rgb(73, 175, 175);
+  margin-top: 20px;
+  box-sizing: border-box;
+  box-shadow: inset 1px 1px 10px 10px teal;
+}
+
+form {
+  padding-top: 15px;
+}
+
+input {
+  margin-top: 10px;
+  width: 40%;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(216, 226, 216);
+  width: 60%;
+}
+input::placeholder {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type='submit'] {
+  color: teal;
+  margin-bottom: 20px;
+  border: 2px solid teal;
+  width: 50%;
+  cursor: pointer;
+}
+@media (max-width: 760px) {
+  input {
+    width: 80%;
+  }
+  span {
+    font-size: 10px;
+  }
+}
+
+span {
+  color: red;
+  display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(158, 20, 50);
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
