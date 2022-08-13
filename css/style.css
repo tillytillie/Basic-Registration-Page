@@ -51,8 +51,10 @@ input {
   background-color: rgb(216, 226, 216);
   width: 60%;
 }
+
 input::placeholder {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
 }
 
 input[type='submit'] {
@@ -63,11 +65,20 @@ input[type='submit'] {
   cursor: pointer;
 }
 @media (max-width: 760px) {
+  input::placeholder {
+    font-size: 20px;
+  }
+
   input {
     width: 80%;
   }
   span {
     font-size: 10px;
+  }
+  input[type='submit'] {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
   }
 }
 
