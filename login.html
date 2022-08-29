@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link  rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>
+                <p class="legend">
+                <img src="img/" alt="fa-User" class="img-user">
+            </p>
+            </legend>
+            <form action="" onsubmit="return loginform()" method="POST">
+                <input type="text" class="username" name="username" required ="true" placeholder="Username/Email" />
+                <br/>
+                <input type="password" class="password" name="username" required ="true"  placeholder="Password" />
+                <br/>
+                <input type="submit" name="submit" value="Login" id="">
+                
+            </form>
+        </fieldset>
+        <script>
+            function loginform(){
+                console.log('login')
+            }
+            
+        </script>
+    </div>
+</body>
+</html>
