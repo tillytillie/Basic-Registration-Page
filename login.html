@@ -15,21 +15,23 @@
                 <img src="img/" alt="fa-User" class="img-user">
             </p>
             </legend>
-            <form action="" onsubmit="return loginform()" method="POST">
-                <input type="text" class="username" name="username" required ="true" placeholder="Username/Email" />
+
+            <form  id="loginform" name="loginForm" action="" onsubmit="return loginForm()" method="post">
+                <input type="text" name="username" placeholder="Username/Email" />
+                <span id="usernameerror"></span>
                 <br/>
-                <input type="password" class="password" name="username" required ="true"  placeholder="Password" />
+                <input type="password" class="password" name="password" placeholder="Password" />
+                <span id="passworderror"></span>
                 <br/>
-                <input type="submit" name="submit" value="Login" id="">
+                <input type="submit" name="submit" value="Login" id="" />
                 
             </form>
         </fieldset>
-        <script>
-            function loginform(){
-                console.log('login')
-            }
-            
-        </script>
     </div>
+
+    <script>
+       
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
