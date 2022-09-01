@@ -5,6 +5,7 @@
 *{
     padding: 0;
     margin: 0;
+    /* border: 1px solid red; */
 }
 .top-header{
     background-color: #155494;
@@ -97,6 +98,9 @@
 }
  
  }
+ .services {
+    
+ }
  .services-body{
     border: 1px dashed #155494;
     padding: 10px;
@@ -107,3 +111,29 @@
 .services-body img{
 width: 100%;
  }
+ .services-body p{
+    color: #155494;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+ }
+
+.services-body a{
+    background-color: #155494;
+    padding: 10px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 760px) {
+    .services-body img{
+        width: 50%;
+    }
+}
