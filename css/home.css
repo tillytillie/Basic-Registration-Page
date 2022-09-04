@@ -178,7 +178,7 @@ padding: 10px;
         margin: 10px;
     }
     .services-body img{
-        width: fit-content;
+        width: 50%;
         height: 150px;
     }
 }
