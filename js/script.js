@@ -112,3 +112,7 @@ function validateForm(){
 //       }
 //     })  
 //  }
+function comingSoon(){
+  alert('Work in Progess on for this section');
+  // window.location.href = 'login.html'
+}
