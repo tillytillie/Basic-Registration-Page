@@ -6,7 +6,9 @@
     padding: 0;
     margin: 0;
     /* border: 1px solid red; */
+    scroll-behavior: smooth;
 }
+/* top header  */
 .top-header{
     background-color: #155494;
     display: inline-block;
@@ -23,12 +25,29 @@
 .top-header a:hover{
     color: white;
 }
+
+/* nav bar  */
+.logo{
+    animation: perspective 4s infinite linear;
+   
+}
+
+@keyframes perspective {
+    0% {transform:perspective(300px) rotateY(0deg)}
+    25% {transform:perspective(300px) rotateY(90deg)}
+    50% {transform:perspective(300px) rotateY(180deg)}
+    75% {transform:perspective(300px) rotateY(270deg)}
+    100% {transform:perspective(300px) rotateY(360deg)}
+ }
+ 
+ /* logo end  */
 .bg-header{
     background-color: rgb(244, 240, 240);
     /*background-color: #155494;*/
     font-family: 'Roboto', monospace;
 }
 
+/* page banner */
 .page-banner{
     position: relative;
 
@@ -79,9 +98,22 @@
     border-radius: 15px;
     margin: 5px;
     font-weight: 700;
-}
+    box-shadow: 0px 0px 5px #fff;
+    width: 20%;
+    /* transform: rotate3d(); */
+    transform: perspective(400px) rotateY(45deg);
+    }
+
+/*    
+ .btn-banner:hover{
+    transform: rotate(0.5turn);
+
+}  */
  
  @media (max-width: 760px) {
+    .btn-banner{
+        width: 30%;
+    }
     .banner-body{
         margin-top: 45%;
         line-height: normal;
@@ -98,24 +130,31 @@
 }
  
  }
+
+ /* services  */
  .services {
-    
+
+    margin: 40px;
  }
  .services-body{
-    border: 1px dashed #155494;
+    border: 1px groove #155494;
+    border-radius: 50px;
     padding: 10px;
-    margin: 10px;
     display: block;
-
- }
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
 .services-body img{
 width: 100%;
+padding: 10px;
  }
  .services-body p{
     color: #155494;
     margin-top: 10px;
     font-size: 20px;
     font-weight: 700;
+    
  }
 
 .services-body a{
@@ -131,9 +170,140 @@ width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-
+.services-body a:hover{
+    text-decoration: none;
+}
 @media (max-width: 760px) {
-    .services-body img{
-        width: 50%;
+    .services-body{
+        margin: 10px;
     }
+    .services-body img{
+        width: fit-content;
+        height: 150px;
+    }
+}
+
+
+/* disply icons list  */
+
+.icons-list {
+    display: inline-flex;
+    background-color: #dacfcf;
+    border-radius: 5px;
+    color: black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    /* box-shadow: -28px 27px 27.5px rgba(0, 0, 0, 53),
+    10px -29px 37.5px rgb(255, 255, 255),
+    inset 4px -4px 8px rgba(0, 0, 0 .52),
+    inset -5px 5px 12px #fff; */
+}
+
+.icons-list i{
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    color: #155494;
+}
+.icons-list span{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.vl {
+    border-left: 2px solid #155494;
+    height: 65px;
+  }
+
+@media (max-width:760px) {
+    .trust-div{
+        justify-content: center;
+        
+    }
+    .icons-list{
+        padding-left: 5px;
+    }
+
+    .icons-list i{
+        font-size: 90%;
+
+    }
+    .icons-list span{
+        font-size: 12px;
+        line-height: 0px;
+        padding: 0;
+        margin: 0;
+    }
+
+.vl {
+    height: 99px;
+    padding: 2px;
+  }
+
+}
+
+/* data prices list  */
+.mtn, .glo, .airtel, .etisalat{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+    border-image: -moz-linear-gradient(left, #fed330 0%, #fed330 20%, #e63841 20%, #e63841 20%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #5ed6fd 60%, #45c33b 60%, #45c33b 80%, #1172c0 80%, #1172c0 80%, #1172c0 100%); /* FF3.6+ */
+  border-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#fed330), color-stop(20%,#fed330), color-stop(20%,#e63841), color-stop(20%,#e63841), color-stop(40%,#e63841), color-stop(40%,#5ed6fd), color-stop(40%,#5ed6fd), color-stop(40%,#e63841), color-stop(40%,#5ed6fd), color-stop(40%,#5ed6fd), color-stop(60%,#5ed6fd), color-stop(60%,#45c33b), color-stop(80%,#45c33b), color-stop(80%,#1172c0), color-stop(80%,#1172c0), color-stop(100%,#1172c0)) 1 stretch repeat; /* Chrome,Safari4+ */
+  border-image: -webkit-linear-gradient(left, #fed330 0%,#fed330 20%,#e63841 20%,#e63841 20%,#e63841 40%,#5ed6fd 40%,#5ed6fd 40%,#e63841 40%,#5ed6fd 40%,#5ed6fd 40%,#5ed6fd 60%,#45c33b 60%,#45c33b 80%,#1172c0 80%,#1172c0 80%,#1172c0 100%) 1 stretch repeat; /* Chrome10+,Safari5.1+ */
+  border-image: -o-linear-gradient(left, #fed330 0%,#fed330 20%,#e63841 20%,#e63841 20%,#e63841 40%,#5ed6fd 40%,#5ed6fd 40%,#e63841 40%,#5ed6fd 40%,#5ed6fd 40%,#5ed6fd 60%,#45c33b 60%,#45c33b 80%,#1172c0 80%,#1172c0 80%,#1172c0 100%) 1 stretch repeat; /* Opera 11.10+ */
+  border-image: -ms-linear-gradient(left, #fed330 0%,#fed330 20%,#e63841 20%,#e63841 20%,#e63841 40%,#5ed6fd 40%,#5ed6fd 40%,#e63841 40%,#5ed6fd 40%,#5ed6fd 40%,#5ed6fd 60%,#45c33b 60%,#45c33b 80%,#1172c0 80%,#1172c0 80%,#1172c0 100%) 1 stretch repeat; /* IE10+ */
+  border-image: linear-gradient(to right, #fed330 0%,#fed330 20%,#e63841 20%,#e63841 20%,#e63841 40%,#5ed6fd 40%,#5ed6fd 40%,#e63841 40%,#5ed6fd 40%,#5ed6fd 40%,#5ed6fd 60%,#45c33b 60%,#45c33b 80%,#1172c0 80%,#1172c0 80%,#1172c0 100%) 1 stretch repeat; /* W3C */
+    transform: perspective(400px) rotateY(20deg);
+    
+}
+
+.mtn, .glo, .airtel, .etisalat ul{
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+.mtn li{
+    list-style-position: inside;
+    list-style-type: square;
+    border-bottom: 1px solid #155494;
+    margin: 2%;
+
+    
+}
+
+.glo li{
+    list-style-position: inside;
+    list-style-type: square;
+    border-bottom: 1px solid #155494;
+    margin: 2%;
+
+}
+
+.etisalat li{
+    list-style-position: inside;
+    list-style-type: square;
+    border-bottom: 1px solid #155494;
+    margin: 2%;
+
+}
+.airtel li{
+    list-style-position: inside;
+    list-style-type: square;
+    border-bottom: 1px solid #155494;
+    margin: 2%;
+
+}
+@media (max-width: 760px) 
+{
+ .mtn, .airtel, .glo, .etisalat{
+    width: 43%;
+    height: auto; 
+    margin-bottom: 30px;
+    padding: 5px;
+    font-size: 15px;
+ }   
 }
