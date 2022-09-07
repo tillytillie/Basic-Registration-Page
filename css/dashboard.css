@@ -1,41 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    /* border: 1px solid red; */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  
 }
 body{
-    font-family: 'Lucida Sans';
+    font-family: 'Roboto', sans-serif;
+        background: #DCDDDF url(https://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);
+        color: #000;
+        font: 14px Arial;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
 }
-header{
-    margin-bottom: 50px;
-    color: whitesmoke;
-}
-header a{
-    color: white;
-}
-.bg-header{
-    background-color: rgb(47, 168, 168);
-}
+
 .dashboard, .main-body {
-    margin-top: 13px;
-}
+    margin-top:
+     13px;
+} 
 .sidebar{
-    height: 100vh;
-    background-color: rgb(65, 150, 150);
-    box-shadow: 5px 5px 5px 2px black;
-    color: white;
-    justify-content: center;
-    text-align: center;
+    /* height: 100vh; */
+    background: #DCDDDF url(https://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);
+    box-shadow: inset 5px 2px 12px 5px white;
+    color: #000;
      
 }
-.sidebar ul{
-margin: 10px;
+.sidebar a{
+    color: #000;
+    
 }
+.sidebar a:hover{
+    text-decoration: none;
+}
+
 .user-img {
     width: 30%;
     height: 60px;
     border-radius: 50%;
     border: 2px dashed black;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: auto;
+    justify-content: center;
 }
 .sidebar li{
     list-style: none;
@@ -45,8 +59,32 @@ margin: 10px;
 }
 
 .main-page{
-    color: black;
-    
+    color: black;    
+}
+
+@media (max-width:760px) {
+    .sidebar {
+        width: 40%;
+        display: inline;
+    }
+.main-page{
+    width: 60%;
+    /* display: inline; */
+}
 }
 
 
+
+/* main body style here */
+.balance{
+    padding: 0px;
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    }
+
+    @media (max-width:760px) {
+        .balance{
+            font-size: 15px;
+        }
+    }

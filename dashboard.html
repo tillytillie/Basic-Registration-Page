@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DashBoard</title>
+    <title>TillyStack | DashBoard</title>
     <!DOCTYPE html public "-//W3C//DTD html 5.0 //en">
     <!--------------------------------Web style link------------------>
     <link rel="icon" href="img/favicon.png" type="image/png">
@@ -15,108 +15,186 @@
     <!--------------------------------Custome style link------------------>
     <link rel="stylesheet" href="css/dashboard.css" >
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css"> 
 </head>
 <body>
-        <!---------------------------------Header------------------------------------->
-        <header>
-            <nav class="navbar navbar-expand-md fixed-top bg-header">
-                <a href="#" class="h4 bolder text-light">TillyStack</a>
-                    <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
-                    <div id="navbarcollapse" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto blockquote text-center">
-                            <li class="nav-item"><a href="#" class="nav-link link-scroll">BUY AIRTIME</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link link-scroll">BUY DATABUNDLE</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link link-scroll">DEPOSIT MONEY</a></li>
-                            <li class="nav-item" ><a href="" class="nav-link link-scroll" >MORE OPTIONS</a> </li>
-                            <button id="display" onclick="display()">More Options</button>
-                           
-                            <div class="moreoption d-nne" id="moreoptions">
-                                <li class="nav-item"> <a href="#" class="nav-link link-scroll">Cable Tv Subscription</a></li>
-                                    <li class="nav-item">  <a href="#" class="nav-link link-scroll">Cable Tv Subscription</a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link link-scroll">Cable Tv Subscription</a></li>
-                                            <li class="nav-item"><a href="#" class="nav-link link-scroll">Cable Tv Subscription</a></li>
-                            </div>
-                           
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+
+  
+  <!---------------------------------Header------------------------------------->
+      
+<!-----------------header fixed top------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-header">
+    <a class="navbar-brand logo" href="index.html">TillyData</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link " href="#" onclick="comingSoon()">Buy Data <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" onclick="comingSoon()">Buy Airtime</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="comingSoon()">Deposit <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="comingSoon()">Transfer</a>
+          </li>
+
+       <!--------------------------dropdown option-------------->
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" onclick="comingSoon()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More Options
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#" onclick="comingSoon()">CableTV Subscription</a>
+            <a class="dropdown-item" href="#" onclick="comingSoon()">Electricity Payment</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onclick="comingSoon()">WAEC/NECO/JAMB Pin</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-black my-2 my-sm-0" type="submit"><i class="fa fa-search"> </i></button>
+      </form>
+    </div>
+  </nav>
+
     <!---------------------------------End Header------------------------------------->
 
     
 
 <!-------------------------------------------------sidebar --------->
-    <main>
-    <div class="row">        
-        <div class="sidebar col-lg-3 col-md-3 col-sm-3 col-xs-3">
-            <p class="dashboard">DashBoard</p>
+    <main class="">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="row">        
+        <div class="sidebar col-lg-2 col-md- col-sm-3 col-xs-3">
+            <p class="dashboard text-center">DashBoard</p>
             <div class="dashboard-body">
                 <img src="img/boye.png" alt="User Img" class="user-img"/>
                 <ul>
-                    <li>Balance</li>
-                    <li>Check-Up</li>
-                    <li>Check-List</li>
-                    <li>API</li>
-                    <li>Log Out</li>
-                   
+                    <a href="#"><li><i class="fa fa-money" onclick="link()"></i> Balance</li></a>
+                    <a href="#"><li><i class="fa fa-wifi" ></i> Data Orders</li></a>
+                    <a href="#"><li><i class="fa fa-bank" ></i> Deposits</li></a>
+                    <a href="#"><li><i class="fa fa-database" ></i> Bill Payments</li></a>
+                    <a href="#"><li><i class="fa fa-phone" ></i> Airtime Topup</li></a>
+                    <a href="#"><li><i class="fa fa-print" ></i> Exam Pins</li></a>
+                    <a href="#"><li><i class="fa fa-database" ></i> API</li></a>
+                    <a href="#" class="text-danger"><li><i class="fa fa-lock " ></i> Logout</li></a>
+               
                 </ul>
             </div>
         </div>
 
-     <div class="main-page col-lg-8 col-md-8 col-sm-8 col-xs-8">
-        <p class="main-body"> Main Body</p>
+<!-- main body start here---------------- -->
+        <div class="main-page col-lg-10 col-md-10 col-sm-10 col-xs-8">
+        <p class="main-body">  <a href="#">Account / TillyStack</a></p>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="row mx-auto">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <p class="badge">Wallet Bal: </p>  
+              <span class="balance">N1,000</span>
+              <a href="#">Deposit Money</a>
+            </div>
     
-    </div>
-</div>
-    </div>
-</main>
-<!---------------------------------------------------Footer---------------->
-<footer>
-    <div class="col-lg-12 col-md-12 col-xs-12">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <p>Quick Links</p>
-                <ol>
-                    <li><a href="">Analytics</a></li>
-                    <li><a href="">Check-Up</a></li>
-                    <li><a href="">Check-List</a></li>
-                    <li><a href="">Lorem</a></li>
-                </ol>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <p class="badge">Commission </p>  
+              <span class="balance">N2,000</span>
+                <br />
+              <a href="#" class="p-2">Referal link</a>
+              <a href="#" class="p-2">View Commission History</a>
             </div>
-        
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <p>Social</p>
-                <ol>
-                    <li><a href="">Facebok</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Telegram</a></li>
-                </ol>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <p class="badge">Membership</p><br />
+              <a href="#" class="p-2">Upgrade Membership</a>
+              <a href="#" class="p-2 pt-5">KYC Verification</a>
             </div>
+          </div>
+          <hr>
+       </div>
+       <!-- <section>
+            <table class="table-bordered table-responsive" border="2px" style="border: 2px solid grey;">
+              <tr>
+                <th>Data Orders</th>
+              </tr>
+              <tr class="d-block-table">
+                <td>Place Order</td>
+                <td>Generate Data Pin</td>
+                <td>My Orders</td>
+              </tr>
+            </table>
 
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <p>Developer</p>
+       </section>
+      </div> -->
+      
+        
+      
+
+      </div>
+      </div>
+</main>
+
+    <!---------------------------------------------------Footer---------------->
+    <footer>
+        <div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                    <hr>
+                    <ul>
+                        <p class="logo">TillyData</p>
+                   
+                    <ol>
+                        We offer instant recharge of Airtime, Databundle, CableTV (DStv, GOtv & Startimes), Electricity Bill Payemnt, Exam Pin and so much more.
+                    </ol>
+                    <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-3">
+                    <p>Lane D4 Behind Gymnassium Center F.C.E, Abeokuta</p>
+                    </div>
     
-                <ol>
-                    <li><a href="">API</a></li>
-                    <li><a href="">Docs</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Hiring</a></li>
-                </ol>
+                    <div class="col-lg-6 col-md-6 col-xs-3">
+                        <p> <span class="text-info">Call: 08035583068 </span> Contact Us - for complaint, feedback or unresolved issues</p>
+                    </div>
+                    </div>
+                </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <p>Social</p>
+                    <ol>
+                        <li><a href="" onclick="comingSoon()">Facebok</a></li>
+                        <li><a href="" onclick="comingSoon()">Twitter</a></li>
+                        <li><a href=""onclick="comingSoon()">Instagram</a></li>
+                        <li><a href="" onclick="comingSoon()">Telegram</a></li>
+                    </ol>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <p>Developer</p>
+        
+                    <ol>
+                        <li><a href="" onclick="comingSoon()">API</a></li>
+                        <li><a href="" onclick="comingSoon()">Docs</a></li>
+                        <li><a href="" onclick="comingSoon()">Pricing</a></li>
+                        <li><a href="" onclick="comingSoon()">Hiring</a></li>
+                    </ol>
+                </div>
             </div>
+            <p class="date">Powered by TillyData (c)<span>
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+            </span></p>
         </div>
-        <p class="date">Powered by TillyStack @copy <span>
-            <script>
-                document.write(new Date().getFullYear())
-            </script>
-        </span></p>
-    </div>
-</footer>
-<!--------------------------------JS style link------------------>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-</html>
+    </footer> 
+    <!--------------------------------JS style link------------------>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+    </html>

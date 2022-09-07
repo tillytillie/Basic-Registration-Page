@@ -116,3 +116,9 @@ function comingSoon(){
   alert('Work in Progess on for this section');
   // window.location.href = 'login.html'
 }
+
+
+
+console.log('are you mad ni')
+
+
